@@ -11,7 +11,7 @@ namespace EFFilm_1.Context
 {
     public class MovieDBContext : DbContext
     {
-        private readonly string cnstr;
+       public DbSet<Movie> Movies { get; set; }
         
         public MovieDBContext(DbContextOptions options) : base(options)
         {
